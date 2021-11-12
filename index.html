@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Lenovo</title>
 </head>
 <body>
@@ -63,7 +69,7 @@
          <div class="banner">
              <p>SAVE UP TO 21% ON <strong> SELECT THINKPAD LAPTOPS </strong>THROUGH NOVEMBER 11TH <strong> Shop Now </strong> > </p>
          </div>
-        <div>
+        <div class="sub-nav-container" >
             <nav>
                 <ul class="subNav">
                     <li><a class="subModels">Models</a></li>
@@ -78,32 +84,33 @@
       </div>
     </div>
    </header>
-   <div class="maxcontainer">
-    <article class="containertitle">
-        <div class="title">Models</div>
-        <div class="grayline"></div>
-        <section>
-            <div>
-                
-                <div class="titleprice">Price</div>
+
+        <div class="models">Models</div>
+        <div class="boxes">
+             <div class="box-price">
+               <div class="price">
+                <p class="titleprice">Price</p>
+                <img src="./Src/Img/icon-arrow-up.svg" alt="">
+                </div>
+               <div>
                     <label class="label:after" ><input type="checkbox" id="cbox1" value="price_checkbox" class="checkbox"> $800-$999.99 (2)</label><br>
                     <label class="label:after" ><input type="checkbox" id="cbox1" value="price_checkbox" class="checkbox"> $1,000-$1,499.99 (4)</label><br>
                     <label class="label:after" ><input type="checkbox" id="cbox1" value="price_checkbox" class="checkbox"> $1,500-$1,999.99 (3) </label><br>
-                    <a onclick="showtext('text')" href="javascript:void(0);" class="seemore">See More</a>
+                    <a href="javascript:void(0);" class="seemore">See More</a>
                 </div>
-        </section>
-        <section>
-            <div class="results">8 Matching results</div>
-            <div class="selectalign">
-            <select class="select">
-                <option class="results">Price Low to High</option>
-                <option class="results">Price High to Low</option>
-            </select> 
-        </div>
+             </div>
+             <div class='box-cards'>
+                 <div class="box-results">
+                <p class="results">8 Matching results</p>
+                <select class="select">
+                    <option class="results">Price Low to High</option>
+                    <option class="results">Price High to Low</option>
+                </select>
+               </div>
             <div class="cards">
-                <div class="containerrectangulo">
+                <div class="containerrectangle">
                     <div class="doorbuster">DOORBUSTER</div>
-                    <img class="imagennote" src= "./src/Img/x1carb-8th.png" alt="Notebook"/>
+                    <img class="imgnote" src= "./src/Img/x1carb-8th.png" alt="Notebook"/>
                     <a href="" class="titledetail">ThinkPad X1 Carbon Gen 8</a>
                     <div>
                       <div class="pricenote">$1,299.99</div>
@@ -111,8 +118,8 @@
                     </div>
                     <button class="bluebutton">Add to Cart</button>
                 </div>
-                <div class="containerrectangulo">
-                    <img class="imagennotebook" src= "./src/Img/x1carb-8th.png" alt="Notebook"/>
+                <div class="containerrectangle">
+                    <img class="imgnotebook" src= "./src/Img/x1carb-8th.png" alt="Notebook"/>
                     <a href="" class="titledetail">ThinkPad X1 Carbon Gen 8</a>
                     <div>
                       <div class="pricenote">$1,299.99</div>
@@ -120,8 +127,8 @@
                     </div>
                     <button class="bluebutton">Add to Cart</button>
                 </div>
-                <div class="containerrectangulo">
-                    <img class="imagennotebook2" src= "./src/Img/lenovo-laptop-thinkpad-x1-extreme-2nd-gen-hero.png" alt="Notebook"/>
+                <div class="containerrectangle">
+                    <img class="imgnotebook2" src= "./src/Img/lenovo-laptop-thinkpad-x1-extreme-2nd-gen-hero.png" alt="Notebook"/>
                     <a href="" class="titledetail">ThinkPad X1 Carbon Gen 8</a>
                     <div>
                       <div class="pricenote">$1,299.99</div>
@@ -129,9 +136,9 @@
                  </div>
                      <button class="bluebutton">Add to Cart</button>
                 </div>
-                 <div class="containerrectangulo">
+                 <div class="containerrectangle">
                         <div class="doorbuster">DOORBUSTER</div>
-                        <img class="imagennote" src= "./src/Img/x1carb-8th.png" alt="Notebook"/>
+                        <img class="imgnote" src= "./src/Img/x1carb-8th.png" alt="Notebook"/>
                         <a href="" class="titledetail">ThinkPad X1 Carbon Gen 8</a>
                         <div>
                           <div class="pricenote">$1,299.99</div>
@@ -140,14 +147,17 @@
                         <button class="bluebutton">Add to Cart</button>
                 </div>
             </div>
+        </div> 
         </section>
+    </div>
         <div >
             <footer >
-                <img class="footer" src="./Src/Img/banner.webp" alt="">
+                <a href="https://www.lenovo.com/us/en/pc/">
+                 <img class="footer" src="./Src/Img/banner.webp" alt="">
+                </a>
             </footer>
         </div>
-     </article>
-   </div>
+
   </div>
  </div> 
  <body>
